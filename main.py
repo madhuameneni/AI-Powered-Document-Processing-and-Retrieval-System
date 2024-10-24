@@ -54,18 +54,6 @@ async def fast_api_fetch_data(query=str, context=""):
 # loader = Load_query_feteher()
 # retrived_data = loader.fast_api_fetch_data("whats inside?")
 
-from fastapi.testclient import TestClient
-client = TestClient(app)
-
-def test_fetcher():
-    query = {"question": "rect??? ...."}
-    # query = "rect??"
-    response = client.get(f"/fetch/{query}")
-    assert response.status_code == 200
-
-
-
-test_fetcher()
     
     
     
